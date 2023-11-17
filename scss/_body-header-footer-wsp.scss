@@ -1,0 +1,103 @@
+body {
+    background-image: url(../img/Fondo-logo-Almar.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  
+
+  /*  HEADER  */
+  
+  header {
+    width: 100%;
+    background-color: $color-violeta-almar;
+    box-shadow: 2px 2px 20px rgb(37, 37, 37);
+    z-index: 1;
+  }
+  
+  .logos img {
+    margin-right: 13px;
+  }
+  
+  nav {
+    padding: 0px 18px 7px 0px;
+    display: flex;
+    text-align: end;
+    align-items: center;
+  
+    ul li {
+      margin: 7px;
+  
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 8px;
+        font-size: 0.9rem;
+  
+        &:hover {
+          padding: 8px;
+          background-color: $color-celeste-claro-almar;
+          border-radius: 100px;
+          color: $color-violeta-almar;
+        }
+      }
+    }
+  }
+  
+  a.active {
+    color: $color-celeste-claro-almar;
+  }
+  
+  /* Apaga el borde del botón hamburguesa de bootstrap */
+  .navbar-toggler {
+    border: none !important;
+  
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  
+
+  /*   FOOTER   */
+  
+  footer {
+    padding: 30px;
+    background-color: $color-azul-almar;
+    color: white;
+    text-align: center;
+    font-size: x-small;
+  }
+  
+  .IconosRedes {
+    margin: 13px;
+  
+    a {
+      margin: 13px;
+    }
+  }
+  
+  footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+  
+    a {
+      color: $color-celeste-claro-almar
+    }
+  }
+  
+
+  /* LOGO WSP FIJO */
+  
+  .whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    right: 20px;
+    bottom: 25px;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    border-radius: 100%;
+    z-index: 10;
+  }
+  

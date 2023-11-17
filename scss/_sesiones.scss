@@ -1,0 +1,48 @@
+/* SESIONES */
+
+@mixin text-center-italic {
+  text-align: center;
+  font-style: italic;
+}
+
+.sesiones {
+    h2 {
+      color: $color-violeta-almar;
+      animation: AnimAgranda 3s;
+    }
+  
+    p {
+      @include text-center-italic;
+      color: $color-azul-almar;
+    }
+  }
+  
+  .card-sesiones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  
+    .card-body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  
+  .card-text {
+    font-size: 0.85rem;
+  }
+  
+  .pie-card-sesiones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: last baseline;
+  }
+  
+  .boton-info-sesion {
+    height: 35px;
+  }
+  

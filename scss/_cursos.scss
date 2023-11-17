@@ -1,0 +1,71 @@
+/* CURSOS */
+
+@mixin text-center-italic {
+  text-align: center;
+  font-style: italic;
+}
+
+@keyframes AnimAgranda {
+    0% {
+      color: $color-violeta-almar;
+      transform: scale(1);
+    }
+  
+    50% {
+      color: #b173b3;
+      transform: scale(1.2);
+    }
+  
+    100% {
+      color: $color-violeta-almar;
+      transform: scale(1);
+    }
+  }
+  
+  .cursos {
+    h2 {
+      color: $color-violeta-almar;
+      animation: AnimAgranda 3s;
+    }
+  
+    p {
+      @include text-center-italic;
+      color: $color-azul-almar;
+    }
+  }
+  
+  .card-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    border: solid 2px $color-violeta-almar;
+  
+    h5 {
+      color: $color-violeta-almar;
+    }
+  
+    &:hover {
+      box-shadow: 5px 5px 20px $color-violeta-almar;
+      transform: translateY(-2%);
+    }
+  
+    .btn:hover {
+      background-color: $color-violeta-almar;
+      border: $color-violeta-almar;
+    }
+  }
+  
+  .modal-content {
+    background-color: #feecff;
+    border: solid 3px $color-violeta-almar;
+  }
+  
+  .modal-footer a {
+    text-decoration: none;
+    color: black;
+  }
+  

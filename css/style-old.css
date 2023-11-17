@@ -3,32 +3,33 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    /* color: #673268;
-    color: #003777;
-    color: #094395;
-    color: #0394C9;
-    color: #007784;
-    color: #A0E4F1;
-    color: #FBF4DA;
-    */
 }
 
+    /* color: #673268; violeta-almar;
+    color: #003777; azul-almar;
+    color: #094395;
+    color: #0394C9; celeste-almar; 
+    color: #007784;
+    color: #A0E4F1; celeste-claro-almar;
+    color: #FBF4DA; amarillo-claro-almar; */
+   
+
 body {
-    background-image: url(../img/Fondo\ logo\ Almar.jpg);
-    background-size: 100% auto;
+    background-image: url(../img/Fondo-logo-Almar.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 /*  HEADER  */
 header {
     width: 100%;
     background-color: #673268;
-    box-shadow: 3px 3px 20px rgb(37, 37, 37);
+    box-shadow: 2px 2px 20px rgb(37, 37, 37);
     z-index: 1;
 }
 
 .logos img {
-    margin-right: 15px;
+    margin-right: 13px;
 }
 
 nav {
@@ -94,7 +95,7 @@ a.active {
     margin: auto;
     padding: 80px;
     text-align: center;
-
+    font-style: italic;
 }
 
 .frase hr {
@@ -144,9 +145,16 @@ a.active {
     margin-top: 30px;
 }
 
-.texto-acercademi h1,
-h4 {
+.texto-acercademi h5 {
+    font-style: italic;
+}
+
+.texto-acercademi h1 {
     color: #673268;
+}
+
+.texto-acercademi h4 {
+    color: #003777;
 }
 
 .logo-acercademmi {
@@ -163,6 +171,48 @@ h4 {
 .especialidades-acercademi h3 {
     color: #673268;
 }
+
+
+/* SESIONES */
+.sesiones h2 {
+    color: #673268;
+    animation: AnimAgranda 3s;
+}
+
+.sesiones p {
+    font-style: italic;
+    color: #003777;
+}
+
+.card-sesiones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-sesiones .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    font-size: 0.85rem;
+}
+
+.pie-card-sesiones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+
+.boton-info-sesion {
+    height: 35px;
+}
+
 
 /* CURSOS */
 @keyframes AnimAgranda {
@@ -185,6 +235,11 @@ h4 {
 .cursos h2 {
     color: #673268;
     animation: AnimAgranda 3s;
+}
+
+.cursos p {
+    font-style: italic;
+    color: #003777;
 }
 
 .card-cursos {
@@ -217,6 +272,11 @@ h4 {
     border: solid 3px #673268;
 }
 
+.modal-footer a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* CONTACTO */
 /* Formulario */
@@ -227,6 +287,7 @@ h4 {
 
 .contacto h4 {
     margin-bottom: 10px;
+    color: #673268;
 }
 
 .logoform {
@@ -243,6 +304,7 @@ label {
     display: block;
     color: #673268;
     font-size: 13px;
+    font-style: italic;
     margin-bottom: 2px;
 }
 
@@ -281,6 +343,11 @@ form button:hover {
 .ubicacion {
     text-align: center;
 }
+
+.ubicacion h4 {
+    color: #673268;
+}
+
 
 iframe.map {
     padding: 10px;
@@ -323,9 +390,19 @@ footer ul li a {
 /* Mobile 0 a 768px */
 @media (max-width:768px) {
 
+    /* Inicio */
+    .logo-carrousel img {
+        width: 45%;
+    }
+
     /* Acerca de mi */
     .logo-acercademmi {
         display: none;
+    }
+
+    /* Sesiones */
+    .card-sesiones .card {
+        margin: 500px;
     }
 
     /* Formulario */
@@ -337,13 +414,22 @@ footer ul li a {
         width: 90%;
     }
 
-    /* WSP */
-    .whatsapp {
-        display: none;
-    }
-
 }
 
+/* Smartphone 0 a 480px */
+@media (max-width:480px) {
+
+    /* Inicio */
+    .logo-carrousel img {
+        width: 42%;
+    }
+}
 
 /* Tablet 768px a 1023px */
-@media (max-width:1023px) {}
+@media (max-width:1023px) {
+
+    /* Acerca de mi */
+    .logo-acercademmi {
+        display: none;
+    }
+}

@@ -1,0 +1,48 @@
+/*    RESPONSIVE    */
+
+/* Mobile 0 a 768px */
+@media (max-width:768px) {
+
+    /* Inicio */
+    .logo-carrousel img {
+        width: 45%;
+    }
+
+    /* Acerca de mi */
+    .logo-acercademmi {
+        display: none;
+    }
+
+    /* Sesiones */
+    .card-sesiones .card {
+        margin: 500px;
+    }
+
+    /* Formulario */
+    .logoform {
+        display: none;
+    }
+
+    form {
+        width: 90%;
+    }
+
+}
+
+/* Smartphone 0 a 480px */
+@media (max-width:480px) {
+
+    /* Inicio */
+    .logo-carrousel img {
+        width: 42%;
+    }
+}
+
+/* Tablet 768px a 1023px */
+@media (max-width:1023px) {
+
+    /* Acerca de mi */
+    .logo-acercademmi {
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+/* INICIO */
+
+@mixin text-center-italic {
+  text-align: center;
+  font-style: italic;
+}
+
+.logo-carrousel img {
+    opacity: 0.6;
+  }
+  
+  .frase {
+    margin: auto;
+    padding: 80px;
+    @include text-center-italic;
+  
+    hr {
+      height: 5px;
+      background-color: $color-violeta-almar;
+      margin: 50px 0;
+    }
+  }
+  
+  .facebook {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fb-page {
+    border: 3px solid $color-violeta-almar;
+    border-radius: 5px;
+    margin: 30px;
+    box-shadow: 3px 3px 20px $color-violeta-almar;
+  }
+  
